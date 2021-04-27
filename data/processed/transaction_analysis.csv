@@ -1,0 +1,7 @@
+,Year,Sales Total,Customer Count,Sales from new customers,New Customers,Order Count,Orders from new customers,Percent of Sales from new Customers,Avg Sales per Order,Avg num orders per Customer,Avg num orders per New Customer,Percent of order from New Customers,Average sales per new customer order
+0,2015,4400282,483,4400282,487,1399,1399,100,3145,2,2,100,3145
+1,2016,5184884,417,1792894,171,1171,315,34,4427,2,1,26,5691
+2,2017,8264115,351,2357397,124,960,199,28,8608,2,1,20,11846
+3,2018,11123219,328,1796861,98,766,150,16,14521,2,1,19,11979
+4,2019,13409299,254,1082193,66,715,121,8,18754,2,1,16,8943
+5,2020,15326550,228,3369519,71,550,114,21,27866,2,1,20,29557

@@ -1,0 +1,13 @@
+,,,,Sales Prediction," $16,480,000 ",
+,,,0.29,New Customer Sales," $4,779,200 ",
+,,,0.71,Existing Customer Sales," $11,700,800 ",
+Cohort Yr,Predicted Customer Count,Predicted Avg. Number of Purchases,Total Predicted Purchases by Cohort,% of Predicted Sales,Sales from Existing Customers,Sales Projection
+2015,73.2,2.0,148,0.59," $46,613.58 "," $6,888,260.96 "
+2016,21.9,1.3,29,0.16," $63,775.38 "," $1,840,535.84 "
+2017,11.7,1.5,18,0.09," $56,734.25 "," $1,017,969.60 "
+2018,7.3,1.3,9,0.06," $69,933.40 "," $656,414.88 "
+2019,7.3,1.7,12,0.03," $27,337.70 "," $329,962.56 "
+2020,10.7,1.5,16,0.08," $58,786.51 "," $957,125.44 "
+2021P,77.0,1.0,77,," $62,067.53 "," $4,779,200.00 "
+Totals,209,,309,," $55,035.48 "," $16,469,469.28 "
+,,,,,AOV,

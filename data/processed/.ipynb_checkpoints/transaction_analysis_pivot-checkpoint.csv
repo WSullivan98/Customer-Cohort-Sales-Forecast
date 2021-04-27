@@ -1,0 +1,14 @@
+,0,1,2,3,4,5
+Year,2015,2016,2017,2018,2019,2020
+Sales Total,4400282,5184884,8264115,11123219,13409299,15326550
+Customer Count,483,417,351,328,254,228
+Sales from new customers,4400282,1792894,2357397,1796861,1082193,3369519
+New Customers,487,171,124,98,66,71
+Order Count,1399,1171,960,766,715,550
+Orders from new customers,1399,315,199,150,121,114
+Percent of Sales from new Customers,100,34,28,16,8,21
+Avg Sales per Order,3145,4427,8608,14521,18754,27866
+Avg num orders per Customer,2,2,2,2,2,2
+Avg num orders per New Customer,2,1,1,1,1,1
+Percent of order from New Customers,100,26,20,19,16,20
+Average sales per new customer order,3145,5691,11846,11979,8943,29557
