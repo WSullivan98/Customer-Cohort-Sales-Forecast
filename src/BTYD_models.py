@@ -219,7 +219,7 @@ if __name__ == "__main__":
 #     print(rfm_actuals.sort_values(by='predicted_purchases').tail())
 
     print('Hold Out period Predicted Mean probability a customer is alive is ' , round(rfm_train_test['probability_alive'].mean(),2)*100,'%')
-    print('Hold Out period PredictedMean predicted purchases' , round(rfm_train_test['predicted_purchases'].mean(),2))
+    print('Hold Out period Predicted Mean predicted purchases' , round(rfm_train_test['predicted_purchases'].mean(),2))
     # ------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -404,6 +404,22 @@ if __name__ == "__main__":
                                                                                  recency=rfm['recency'],
                                                                                  T=rfm['T'])
 
+
+    print(rfm.sort_values(by='frequency').tail())
+    from lifetimes.plotting import plot_history_alive
+
+    id = 100568
+    days_since_birth = 2178
+    sp_trans = df.loc[df['Customer ID'] == id]
+    df["Date"] = df['Date'].astype(str)
+
+    # alive_plot = plot_history_alive(bgf, days_since_birth, sp_trans, 'Date', c='b')
+
+
+
+
+
+
     #GG
     ggf = lifetimes.GammaGammaFitter(penalizer_coef=m_best_penalizer)
     ggf.fit(rfm['frequency'], rfm['monetary_value'])
@@ -457,17 +473,17 @@ if __name__ == "__main__":
     cust_count_pred =  cust_count_pred.reset_index()
     cust_count_pred.columns = ['Cohort Yr','Probability Alive', 'Customer Count']
 
-    cust_prediction_purchases = rfm.groupby('Cohort Yr')['pred_purchases'].value_counts(bins=3)
-    cust_prediction_purchases = cust_prediction_purchases.reset_index()
-    cust_prediction_purchases.columns = ['Cohort Yr','Probability of Purchase', 'Number of Purchases']
+    # cust_prediction_purchases = rfm.groupby('Cohort Yr')['pred_purchases'].value_counts(bins=3)
+    # cust_prediction_purchases = cust_prediction_purchases.reset_index()
+    # cust_prediction_purchases.columns = ['Cohort Yr','Probability of Purchase', 'Number of Purchases']
 
-    prediction_cohort_analysis = cust_count_pred.merge(cust_prediction_purchases, on='Cohort Yr')
-    print(prediction_cohort_analysis)
+    # prediction_cohort_analysis = cust_count_pred.merge(cust_prediction_purchases, on='Cohort Yr')
+    # print(prediction_cohort_analysis)
 
 
-    alive_purchasing_prediction = thresh_prediction(rfm,thresh=0.6)
-    print(alive_purchasing_prediction)
-    alive_purchasing_prediction.to_csv('../data/processed/alive_purchasing_prediction.csv')
+    # alive_purchasing_prediction = thresh_prediction(rfm,thresh=0.6)
+    # print(alive_purchasing_prediction)
+    # alive_purchasing_prediction.to_csv('../data/processed/alive_purchasing_prediction.csv')
 
 
 
